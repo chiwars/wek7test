@@ -1,8 +1,19 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="8" inline="false" x="121" y="92">
+    <mutation elseif="1"></mutation>
     <value name="IF0">
-      <block type="sensor_object" id="16">
-        <field name="OBJECT">LEFTSIDE</field>
+      <block type="logic_compare" id="220" inline="true">
+        <field name="OP">GT</field>
+        <value name="A">
+          <block type="sensor_object" id="221">
+            <field name="OBJECT">LEFTSIDE</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="222">
+            <field name="NUM">100</field>
+          </block>
+        </value>
       </block>
     </value>
     <statement name="DO0">
@@ -15,6 +26,35 @@
         <value name="BOTHMOVRIGHT">
           <block type="math_number" id="59">
             <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="IF1">
+      <block type="logic_compare" id="176" inline="true">
+        <field name="OP">GT</field>
+        <value name="A">
+          <block type="sensor_object" id="135">
+            <field name="OBJECT">RIGHTSIDE</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="216">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO1">
+      <block type="movement_setmotors" id="217" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="218">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="219">
+            <field name="NUM">10</field>
           </block>
         </value>
       </block>
