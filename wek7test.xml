@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_if" id="8" inline="false" x="121" y="92">
-    <mutation elseif="1"></mutation>
+    <mutation elseif="1" else="1"></mutation>
     <value name="IF0">
       <block type="logic_compare" id="220" inline="true">
         <field name="OP">GT</field>
@@ -58,6 +58,9 @@
           </block>
         </value>
       </block>
+    </statement>
+    <statement name="ELSE">
+      <block type="movement_forward" id="237"></block>
     </statement>
   </block>
 </xml>
