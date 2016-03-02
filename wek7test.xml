@@ -1,1 +1,23 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="8" inline="false" x="121" y="92">
+    <value name="IF0">
+      <block type="sensor_object" id="16">
+        <field name="OBJECT">LEFTSIDE</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="movement_setmotors" id="51" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="58">
+            <field name="NUM">50</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="59">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
